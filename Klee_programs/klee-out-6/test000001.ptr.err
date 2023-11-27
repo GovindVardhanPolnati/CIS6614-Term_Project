@@ -1,0 +1,24 @@
+Error: memory error: out of bound pointer
+File: libc/string/strnlen.c
+Line: 30
+assembly.ll line: 8790
+State: 1
+Stack: 
+	#000008790 in strnlen(symbolic, 18446744073709551615) at libc/string/strnlen.c:30
+	#100004463 in _do_one_spec(138428745375744, 138423376666624, 138383111348224) at libc/stdio/_vfprintf.c:1679
+	#200003716 in vfprintf(138428745375744, 139612545736704, 138409418022912) at libc/stdio/_vfprintf.c:1919
+	#300003447 in vsnprintf(138421229182976, 18446744073709551615, 139612545736704, 138409418022912) at libc/stdio/vsnprintf.c:64
+	#400002754 in sprintf(138421229182976, 139612545736704) at libc/stdio/sprintf.c:24
+	#500000593 in __user_main() at program7.c:12
+	#600000404 in __uClibc_main(139609894936576, 1, 139626504380416, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#700000576 in main(1, 139626504380416)
+Info: 
+	address: (Concat w64 0
+             (Concat w56 0
+                         (Concat w48 0
+                                     (Concat w40 0
+                                                 (ReadLSB w32 0 value)))))
+	example: 16843009
+	range: [1, 4294967295]
+	next: object at 138375058284544 of size 1
+		MO9292[1] allocated at _do_one_spec():  %18 = alloca i8, align 1

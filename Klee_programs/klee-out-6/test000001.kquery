@@ -1,0 +1,9 @@
+array value[4] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 0
+                 (Concat w64 0
+                             (Concat w56 0
+                                         (Concat w48 0
+                                                     (Concat w40 0
+                                                                 (ReadLSB w32 0 value)))))))]
+        false)

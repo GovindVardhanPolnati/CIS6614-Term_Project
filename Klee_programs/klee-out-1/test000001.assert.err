@@ -1,0 +1,10 @@
+Error: ASSERTION FAIL: 0
+File: program2.c
+Line: 13
+assembly.ll line: 600
+State: 1
+Stack: 
+	#000000600 in check_string(buf=139332052213760, len=5) at program2.c:13
+	#100000626 in __user_main(argc=1, argv=140570344972288) at program2.c:22
+	#200000377 in __uClibc_main(140553802637312, 1, 140570344972288, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#300000549 in main(1, 140570344972288)

@@ -1,0 +1,9 @@
+Error: invalid klee_assume call (provably false)
+File: program4.c
+Line: 16
+assembly.ll line: 599
+State: 1
+Stack: 
+	#000000599 in __user_main(argc=1, argv=140423760814080) at program4.c:16
+	#100000379 in __uClibc_main(140407218479104, 1, 140423760814080, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#200000551 in main(1, 140423760814080)

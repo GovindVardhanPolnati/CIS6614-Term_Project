@@ -1,0 +1,10 @@
+Error: ASSERTION FAIL: 0
+File: program5.c
+Line: 16
+assembly.ll line: 597
+State: 1
+Stack: 
+	#000000597 in get_value_based_on_time() at program5.c:16
+	#100000622 in __user_main() at program5.c:22
+	#200000399 in __uClibc_main(140647356682240, 1, 140663764799488, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#300000571 in main(1, 140663764799488)

@@ -1,0 +1,14 @@
+Error: memory error: null page access
+File: program6.c
+Line: 7
+assembly.ll line: 566
+State: 1
+Stack: 
+	#000000566 in check_string(buf=0, len=10) at program6.c:7
+	#100000624 in __user_main(argc=1, argv=140243492294656) at program6.c:17
+	#200000379 in __uClibc_main(140226949959680, 1, 140243492294656, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#300000551 in main(1, 140243492294656)
+Info: 
+	address: 0
+	next: object at 138997951778816 of size 4
+		MO6202[4] allocated at __user_main():  %argc.addr = alloca i32, align 4

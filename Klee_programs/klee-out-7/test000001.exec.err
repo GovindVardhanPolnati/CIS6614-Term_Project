@@ -1,0 +1,7 @@
+Error: external call with symbolic argument: sprintf
+File: program7.c
+Line: 12
+assembly.ll line: 23
+State: 1
+Stack: 
+	#000000023 in main() at program7.c:12
