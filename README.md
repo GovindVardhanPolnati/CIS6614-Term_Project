@@ -20,3 +20,4 @@ To Analyze output use below commands:
 -	klee-stats . : This command gives results as shown below. It lists out all the parameters for the program results obtained.
 -	Ktest-tool <.ktest file>: this command helps open and read the test cases created by KLEE.
 
+![image](https://github.com/GovindVardhanPolnati/CIS6614-Term_Project/assets/33367492/0fcccb56-0f90-4cec-b110-d3d4af88ca2b)
